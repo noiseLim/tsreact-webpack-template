@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(10px + 1vmin);
+  @include useRegularFont;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $mainThemeColor;
+  color: $white;
+
+  &__logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app__logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
