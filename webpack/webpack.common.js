@@ -28,7 +28,16 @@ module.exports = {
       },
       {
         test: /\.(s*)css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader', // it compiles Sass to CSS, using Node Sass by default
+            options: {
+              additionalData: '@import "./src/styles/index";', // inject this import by default in each scss-file
+            },
+          },
+        ],
       },
     ],
   },
