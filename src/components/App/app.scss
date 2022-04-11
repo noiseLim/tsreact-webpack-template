@@ -1,14 +1,15 @@
 .app {
   min-height: 100vh;
+
   display: flex;
-  font-size: calc(10px + 1vmin);
-  @include useRegularFont;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  font-size: calc(10px + 1vmin);
   background-color: $mainThemeColor;
   color: $white;
+  @include useRegularFont;
 
   &__logo {
     height: 40vmin;

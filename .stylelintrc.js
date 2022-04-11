@@ -12,7 +12,7 @@ module.exports = {
     'declaration-colon-space-before': 'never',
     'declaration-colon-space-after': 'always',
     'declaration-block-trailing-semicolon': 'always',
-    // 'declaration-no-important': true,
+    'declaration-no-important': true,
     'declaration-block-no-redundant-longhand-properties': true,
     'selector-attribute-brackets-space-inside': 'always',
     'selector-attribute-operator-space-before': 'always',
@@ -31,7 +31,6 @@ module.exports = {
     'color-no-invalid-hex': true,
     'block-no-empty': true,
     'comment-no-empty': true,
-    // 'at-rule-no-unknown': true,
     'at-rule-no-unknown': [
       true,
       {
@@ -43,17 +42,27 @@ module.exports = {
       [
         {
           groupName: 'dimensions',
-          noEmptyLineBetween: true,
-          properties: ['height', 'min-height', 'width', 'min-width'],
+          emptyLineBefore: 'always',
+          properties: ['width', 'min-width', 'max-width', 'height', 'min-height', 'max-height'],
         },
         {
           groupName: 'position',
-          noEmptyLineBetween: true,
-          properties: ['display', 'position', 'top', 'right', 'bottom', 'left'],
+          emptyLineBefore: 'always',
+          properties: [
+            'display',
+            'flex-direction',
+            'justify-content',
+            'align-items',
+            'position',
+            'top',
+            'right',
+            'bottom',
+            'left',
+          ],
         },
         {
           groupName: 'indent',
-          noEmptyLineBetween: true,
+          emptyLineBefore: 'always',
           properties: [
             'margin',
             'margin-top',
@@ -69,7 +78,7 @@ module.exports = {
         },
         {
           groupName: 'font',
-          noEmptyLineBetween: true,
+          emptyLineBefore: 'always',
           properties: ['font-family', 'src', 'font-size', 'font-weight', 'font-style'],
         },
       ],
