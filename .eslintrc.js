@@ -41,6 +41,7 @@ module.exports = {
     'react/jsx-wrap-multilines': ['error', { arrow: true, return: true, declaration: true }],
     'react/button-has-type': 0,
     'react/no-multi-comp': 0,
+    'react/state-in-constructor': 0,
 
     'prettier/prettier': ['error'],
 
