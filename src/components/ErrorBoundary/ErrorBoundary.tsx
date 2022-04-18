@@ -1,5 +1,5 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
-import Error from '../Error';
+import { Redirect } from 'react-router-dom';
 
 interface Props {
   children: ReactNode;
@@ -26,7 +26,7 @@ class ErrorBoundary extends Component<Props, State> {
 
   public render() {
     if (this.state.hasError) {
-      return <Error />;
+      return <Redirect to='/error' />;
     }
 
     return this.props.children;

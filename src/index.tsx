@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './components/App';
-import ErrorBoundry from './components/ErrorBoundary';
+import ErrorBoundary from './components/ErrorBoundary';
 
 import './styles/style.scss';
 
@@ -8,7 +9,9 @@ const container = document.getElementById('root');
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const root = createRoot(container!);
 root.render(
-  <ErrorBoundry>
-    <App />
-  </ErrorBoundry>
+  <Router>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+  </Router>
 );
