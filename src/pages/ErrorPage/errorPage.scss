@@ -1,4 +1,4 @@
-.errorMessage {
+.error-message {
   width: 100%;
 
   margin: 0 auto;
@@ -8,8 +8,5 @@
   &__title {
     display: flex;
     justify-content: center;
-  }
-  &__btn {
-    margin: 10px 0;
   }
 }
