@@ -1,5 +1,6 @@
 import HomePage from '../pages/HomePage';
 import ErrorPage from '../pages/ErrorPage';
+import NotFound from '../pages/NotFound';
 
 export interface RouteObject {
   caseSensitive?: boolean;
@@ -12,7 +13,7 @@ export interface RouteObject {
 const routes: RouteObject[] = [
   {
     path: '*',
-    element: <HomePage />,
+    element: <NotFound />,
   },
   {
     path: '/',
