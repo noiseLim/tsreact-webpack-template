@@ -2,9 +2,9 @@ import { FC, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
 
-import './notFound.scss';
+import './notFoundPage.scss';
 
-const NotFound: FC = () => {
+const NotFoundPage: FC = () => {
   useEffect(() => {
     gsap.set('svg', { visibility: 'visible' });
     gsap.to('#headStripe', {
@@ -763,7 +763,7 @@ const NotFound: FC = () => {
           </div>
           <div className='not-found__content'>
             <h1>404</h1>
-            <h2>UH OH! You`&apos;`re lost.</h2>
+            <h2>UH OH! You&apos;re lost.</h2>
             <p>
               The page you are looking for does not exist. How you got here is a mystery. But you
               can click the button below to go back or to the homepage.
@@ -784,4 +784,4 @@ const NotFound: FC = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundPage;
