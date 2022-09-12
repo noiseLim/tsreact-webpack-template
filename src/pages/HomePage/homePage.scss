@@ -6,11 +6,6 @@
   justify-content: center;
   align-items: center;
 
-  font-size: calc(10px + 1vmin);
-  background-color: $mainThemeColor;
-  color: $white;
-  @include useRegularFont;
-
   &__logo {
     height: 40vmin;
     pointer-events: none;
