@@ -17,3 +17,15 @@
   font-family: "Roboto-Medium", sans-serif;
   font-weight: 500;
 }
+
+@mixin mobileMedia {
+  @media only screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin mobileTablet {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
